@@ -1,23 +1,37 @@
 import PageButtons from "../library/button";
 import { useState, useEffect } from "react";
 import Overview from "./overview";
-import Intro from "./intro";
-import Page1 from "./page";
-import Page2 from "./page2";
+import Proposals from "./proposals";
+import Referenda from "./referenda";
+import Council from "./council";
+import Treasury from "./treasury";
+import Bounties from "./bounties";
 import { Routes, Route, useNavigate, Navigate, useLocation } from "react-router-dom";
 
 export const PAGE_CATEGORIES = [
     {
         _id: 1,
-        session: 'default'
+        session: 'Default'
     },
     {
         _id: 2,
-        session: 'main'
+        session: 'Democracy'
     },
     {
         _id: 3,
-        session: 'others'
+        session: 'Council'
+    },
+    {
+        _id: 4,
+        session: 'Treasury'
+    },
+    {
+        _id: 5,
+        session: 'Bounties'
+    },
+    {
+        _id: 6,
+        session: 'Network'
     }
 ];
 
@@ -32,23 +46,37 @@ export const PAGE_CONFIG = [
     {
         category: 2,
         id: 2,
-        title: 'Intro',
-        url: '/introduction',
-        Entry: Intro
+        title: 'Proposals',
+        url: '/proposals',
+        Entry: Proposals
     },
     {
-        category: 3,
+        category: 2,
         id: 3,
-        title: 'Page1',
-        url: '/page1',
-        Entry: Page1
+        title: 'Referenda',
+        url: '/referenda',
+        Entry: Referenda
     },
     {
         category: 3,
         id: 4,
-        title: 'Page2',
-        url: '/page2',
-        Entry: Page2
+        title: 'Council',
+        url: '/council',
+        Entry: Council
+    },
+    {
+        category: 4,
+        id: 5,
+        title: 'Treasury',
+        url: '/treasury',
+        Entry: Treasury
+    },
+    {
+        category: 5,
+        id: 6,
+        title: 'Bounties',
+        url: '/bounties',
+        Entry: Bounties
     }
 ];
 

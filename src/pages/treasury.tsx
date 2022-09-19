@@ -1,6 +1,6 @@
 import Header from "../library/header";
 
-const Page2 = (props: any) => {
+const Treasury = (props: any) => {
     const { page } = props;
     const { title } = page;
     return (
@@ -8,4 +8,4 @@ const Page2 = (props: any) => {
     )
 };
 
-export default Page2;
+export default Treasury;
