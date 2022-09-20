@@ -1,6 +1,7 @@
 import SideMenu from './library/SideMenu/index';
 import { Router, Pages } from './pages';
 import { BrowserRouter } from 'react-router-dom';
+import { APIProvider } from './contexts/API';
 
 export const Entry = () => {
     return (
